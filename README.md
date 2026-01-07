@@ -58,3 +58,7 @@ The **Smart Campus Complaint Management System (CMS)** is a web-based applicatio
 ├── .gitignore
 ├── package.json
 └── README.md
+
+```
+### Deployed url: https://complaint-management-sys-fe472.web.app
+
