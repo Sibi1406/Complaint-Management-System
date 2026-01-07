@@ -1,120 +1,139 @@
-# 🛠️ Complaint Management System
+🏫 Campus Complaint Management System (CMS)
 
-The **Complaint Management System** is a platform built with **React.js** to provide an effective solution for managing and resolving complaints within schools and colleges. The platform streamlines the entire process, enabling students, faculty, and staff to easily submit complaints and track their status in real-time.
+The Smart Campus Complaint Management System (CMS) is a web-based application built using React.js and Firebase to simplify the process of lodging, tracking, and resolving campus-related complaints.
+It enables students to raise complaints easily while allowing administrators to monitor and resolve them efficiently.
 
-## 🚀 Features
+🚀 Features
+👤 User Features
 
-- **User-friendly Interface**: A simple and intuitive UI allowing users to submit, view, and track complaints effortlessly.
-- **Complaint Submission**: Students, faculty, and staff can quickly file complaints using dedicated forms.
-- **Admin Dashboard**: Administrators can manage, prioritize, and resolve complaints, ensuring efficient issue handling.
-- **Real-time Updates**: Users are notified about the status and progress of their complaints.
-- **Secure Authentication**: Ensures only authorized users can submit or manage complaints, using **Firebase** or other authentication methods.
-- **Responsive Design**: The platform is fully responsive, working seamlessly on mobile, tablet, and desktop devices.
+Secure login using Firebase Authentication
 
-## 🛠️ Technologies Used
+Raise complaints under different categories (Hostel, Classroom, Infrastructure, etc.)
 
-- **Frontend**: React.js
-- **State Management**: React Hooks
-- **UI Library**: Material-UI (optional for design enhancements)
-- **Backend (Optional)**: Node.js or Firebase for complaint management
-- **Database (Optional)**: Firebase Firestore or other databases for storing complaints and user data
-- **Authentication**: Firebase Authentication or a similar service for secure login
+Track complaint status (Open / Resolved)
 
-## 🏁 Getting Started
+Clean and responsive user dashboard
 
-Follow these steps to set up the project locally:
+🛠️ Admin Features
 
-### Prerequisites
+Single login system (role-based access)
 
-Ensure you have the following installed:
+View all complaints submitted by users
 
-- **Node.js**
-- **npm** or **yarn**
+Update complaint status (Open → Resolved / Reopen)
 
-### Installation
+Professional admin dashboard with statistics
 
-1. Clone the repository:
+⚙️ System Features
 
-   ```bash
-   git clone https://github.com/your-username/complaint-management-system.git
-   ```
+Real-time data storage using Firebase Firestore
 
-2. Navigate to the project directory:
+Role-based redirection (User / Admin)
 
-   ```bash
-   cd complaint-management-system
-   ```
+Responsive UI (mobile, tablet, desktop)
 
-3. Install the necessary dependencies:
+Hosted on Google Cloud via Firebase Hosting
 
-   ```bash
-   npm install
-   ```
+🛠️ Technologies Used
 
-4. Set up environment variables for authentication and database integration. If you're using Firebase, create a `.env` file in the root directory and add your Firebase configuration:
+Frontend: React.js
 
-   ```bash
-   REACT_APP_API_KEY=your-firebase-api-key
-   REACT_APP_AUTH_DOMAIN=your-firebase-auth-domain
-   REACT_APP_PROJECT_ID=your-firebase-project-id
-   REACT_APP_STORAGE_BUCKET=your-firebase-storage-bucket
-   REACT_APP_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
-   REACT_APP_APP_ID=your-firebase-app-id
-   ```
+State Management: React Hooks
 
-5. Start the development server:
+Authentication: Firebase Authentication
 
-   ```bash
-   npm start
-   ```
+Database: Firebase Firestore
 
-   The application should now be running on [http://localhost:3000](http://localhost:3000).
+Hosting: Firebase Hosting (Google Cloud)
 
-## 🔧 Environment Variables
+Version Control: Git & GitHub
 
-If you're using Firebase, set up the required environment variables by adding your Firebase configuration details into a `.env` file in the root directory.
+🏁 Getting Started (Local Setup)
+Prerequisites
 
-```bash
-REACT_APP_API_KEY=your-firebase-api-key
-REACT_APP_AUTH_DOMAIN=your-firebase-auth-domain
-REACT_APP_PROJECT_ID=your-firebase-project-id
-REACT_APP_STORAGE_BUCKET=your-firebase-storage-bucket
-REACT_APP_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
-REACT_APP_APP_ID=your-firebase-app-id
-```
+Make sure you have installed:
 
-## 🌍 Deployment
+Node.js
 
-To deploy the project (e.g., using **Netlify** or **Vercel**):
+npm
 
-1. Push your project to a GitHub repository.
-2. Sign in to **Netlify** or **Vercel**.
-3. Connect your GitHub repository and deploy the project.
+Installation Steps
 
-## 📂 Project Structure
+Clone the repository:
 
-```bash
+git clone https://github.com/YOUR_USERNAME/Complaint-Management-System.git
+
+
+Navigate to the project directory:
+
+cd Complaint-Management-System
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm start
+
+
+The app will run on:
+
+http://localhost:3000
+
+🔐 Firebase Configuration
+
+Create a .env file in the root directory and add your Firebase credentials:
+
+REACT_APP_API_KEY=your-api-key
+REACT_APP_AUTH_DOMAIN=your-auth-domain
+REACT_APP_PROJECT_ID=your-project-id
+REACT_APP_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_MESSAGING_SENDER_ID=your-sender-id
+REACT_APP_APP_ID=your-app-id
+
+
+⚠️ Do not upload .env to GitHub (already ignored using .gitignore).
+
+🌍 Deployment (Google Cloud)
+
+This project is deployed using Firebase Hosting, which runs on Google Cloud infrastructure.
+
+Deployment Steps
+npm run build
+firebase deploy
+
+
+After deployment, the application will be live at:
+
+https://your-project-id.web.app
+
+📂 Project Structure
 .
 ├── public
 ├── src
-│   ├── components   # Reusable components
-│   ├── pages        # Pages for complaint submission, admin dashboard, etc.
-│   ├── services     # Authentication and database services (Firebase, etc.)
-│   ├── App.js       # Main application component
-│   └── index.js     # Entry point of the application
-└── package.json
-```
+│   ├── Components
+│   │   ├── Login
+│   │   ├── Complain-Page
+│   │   ├── Admin
+│   │   └── Contexts
+│   ├── firebase-service
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
 
-## 🤝 Contributing
+🎓 Academic Note
 
-Contributions are always welcome! Feel free to fork the repository and submit a pull request with any new features or bug fixes.
+This project was developed as a college academic project, focusing on:
 
-## 📜 License
+Practical use of React
 
-This project is licensed under the [MIT License](./LICENSE).
+Firebase Authentication & Firestore
 
-## ✉️ Contact
+Cloud deployment
 
-For any questions or feedback, feel free to reach out:
-
-- **Email**: priyanshumth0808@gmail.com
+Real-world complaint management workflo
