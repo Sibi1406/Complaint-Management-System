@@ -32,13 +32,6 @@ The **Smart Campus Complaint Management System (CMS)** is a web-based applicatio
 - Firebase Hosting (Google Cloud)
 - Git & GitHub
 
-
-## 🏁 Getting Started
-
-### Prerequisites
-- Node.js
-- npm
-
 ---
 
 ### 📂 Project Structure
